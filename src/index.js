@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
+import HomePage from './components/home';
 import reportWebVitals from './reportWebVitals';
 
+//Rendering the Homepage
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  React.createElement(HomePage, {}, null),
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
+
+
+//This was a really simple yet confusing project
+//still dont know what is going on fully
+//Really appreciate the DOM immediately updating when I make change to the code though with REACT
